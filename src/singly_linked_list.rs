@@ -26,8 +26,8 @@ impl<T> SinglyLinkedList<T> {
     }
 }
 
-impl<T> FromIterator<T> for SinglyLinkedList<T> {
-    fn from_iter<I: IntoIterator<Item = T>>(iter: I) -> Self {
+impl<A> FromIterator<A> for SinglyLinkedList<A> {
+    fn from_iter<T: IntoIterator<Item = A>>(iter: T) -> Self {
         todo!()
     }
 }
