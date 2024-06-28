@@ -42,7 +42,7 @@ mod tests {
     #[test]
     fn out_of_bounds() {
         use super::*;
-        
+
         let list = SinglyLinkedList {
             first: Some(SinglyLinkedNode {
                 next: Some(Box::new(SinglyLinkedNode {
